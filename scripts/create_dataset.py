@@ -1,4 +1,4 @@
-# srun -N 1 -n 1 --gpus=1 python -m scripts.create_dataset --experimental_folder exp_gpu1 --number_of_experiments 25
+# srun -N 1 -n 1 --gpus=1 python -m scripts.create_dataset --experimental_folder experiments --number_of_experiments 25
 import os
 import argparse
 
