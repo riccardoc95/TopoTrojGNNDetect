@@ -65,7 +65,16 @@ pip install -r requirements.txt
 You first need to create the graph dataset from clean and Trojaned models:
 
 ```bash
-python -m scripts.create_dataset --experimental_folder experiments --number_of_experiments 25
+python -m scripts.create_dataset \
+  --dataset_name cifar10 \
+  --input_size "3 32 32" \
+  --model_name resnet18 \
+  --experimental_folder experiments \
+  --number_of_experiments 25 \
+  --epochs 100 \
+  --batch 512 \
+  --in_chans 3 \
+  --device cuda
 ```
 
 This command will:
