@@ -1,0 +1,9 @@
+numpy
+torch>=1.10.0
+torchvision>=0.13.0
+torch-geometric
+ripser
+persim
+tqdm
+matplotlib
+scikit-learn
